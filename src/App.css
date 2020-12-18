@@ -10,13 +10,13 @@ body {
 
 .image-container {
 	position: relative;
-  transition: transform 0.2s;
+  transition: transform 0.1s;
   border: 2px inset #D5D6DB;
 }
 
 .image-container:hover {
 	cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
   border: 5px outset #D5D6DB;
 }
 
