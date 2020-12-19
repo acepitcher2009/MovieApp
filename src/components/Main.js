@@ -6,6 +6,7 @@ import SearchBox from './SearchBox';
 import AddFavourites from './AddFavourites';
 import RemoveFavourites from './RemoveFavourites';
 import '../App.css'
+import { MovieApi } from './apiKeys';
 
 const Main = () => {
     const [movies, setMovies] = useState([]);
@@ -13,7 +14,7 @@ const Main = () => {
     const [searchValue, setSearchValue] = useState('');
 
     const getMovieRequest = async (searchValue) => {
-        const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=3e118d2e`;
+        const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=${MovieApi.api}`;
 
         const response = await fetch(url);
         const responseJson = await response.json();
